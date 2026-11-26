@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="uz" translate="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google" content="notranslate">
+<title>BMW tarixi: 1916 – 2026</title>
+<style translate="no">
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  --bg: linear-gradient(160deg, #d6e6ff, #f2f7ff 50%, #d3e3ff);
+  --g: rgba(255, 255, 255, 0.52);
+  --gb: rgba(255, 255, 255, 0.85);
+  --t: #0a1a33;
+  --m: #3a4f73;
+  --a: #1c63c8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: linear-gradient(160deg, #040a16, #0b1d3c 55%, #060f20);
+    --g: rgba(255, 255, 255, 0.07);
+    --gb: rgba(255, 255, 255, 0.18);
+    --t: #eef4ff;
+    --m: #a8bad6;
+    --a: #5aa9ff;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: linear-gradient(160deg, #040a16, #0b1d3c 55%, #060f20);
+  --g: rgba(255, 255, 255, 0.07);
+  --gb: rgba(255, 255, 255, 0.18);
+  --t: #eef4ff;
+  --m: #a8bad6;
+  --a: #5aa9ff;
+}
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--t);
+  font: 16px/1.55 "Inter", "Avenir Next", "Segoe UI", Roboto, system-ui, sans-serif;
+  transition: color 0.3s ease;
+}
+/* Orqa fondagi mayin yorug'lik dog'lari */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 30% at 12% 8%, rgba(28, 105, 212, 0.55), transparent),
+    radial-gradient(35% 28% at 90% 38%, rgba(123, 92, 255, 0.4), transparent),
+    radial-gradient(42% 30% at 20% 90%, rgba(0, 194, 255, 0.35), transparent);
+}
+/* Mavzu almashtirish tugmasi */
+.theme-btn {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top, 16px));
+  right: 16px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  border-radius: 99px;
+  border: 1px solid var(--gb);
+  background: var(--g);
+  color: var(--t);
+  font: 600 13px/1 inherit;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(160%);
+  box-shadow: 0 6px 20px rgba(5, 25, 70, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.theme-btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--a);
+}
+.theme-btn:active {
+  transform: scale(0.97);
+}
+.hero, main, footer {
+  width: min(680px, calc(100% - 32px));
+  margin-inline: auto;
+}
+/* Glassmorphism kartochka asosi */
+.c {
+  background: var(--g);
+  border: 1px solid var(--gb);
+  border-radius: 24px;
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  backdrop-filter: blur(20px) saturate(150%);
+  box-shadow: 0 10px 36px rgba(5, 25, 70, 0.2);
+}
+.hero {
+  margin-top: 24px;
+  margin-bottom: 34px;
+  padding: 34px 20px 30px;
+  text-align: center;
+}
+.em {
+  width: 96px;
+  height: 96px;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+}
+h1 {
+  margin: 0.15em 0 0.2em;
+  font-size: clamp(44px, 13vw, 74px);
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.hero p {
+  margin: 0 auto;
+  max-width: 32em;
+  color: var(--m);
+}
+.ch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 18px;
+}
+.ch span {
+  padding: 6px 13px;
+  border-radius: 99px;
+  background: var(--g);
+  border: 1px solid var(--gb);
+  font-size: 13px;
+  font-weight: 500;
+}
+/* Vertikal vaqt chizig'i */
+main {
+  position: relative;
+  padding-left: 26px;
+}
+main::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(var(--a), transparent);
+}
+article {
+  position: relative;
+  margin-bottom: 26px;
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+article::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--a);
+  box-shadow: 0 0 0 4px var(--g), 0 0 14px var(--a);
+}
+/* Rasm va zaxira SVG konteyneri */
+.i {
+  position: relative;
+  height: 230px;
+  display: block;
+  overflow: hidden;
+  border-radius: 23px 23px 0 0;
+  background: linear-gradient(135deg, hsl(var(--h) 75% 32%), hsl(calc(var(--h) + 45) 75% 15%));
+}
+.i::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(4, 10, 22, 0.68) 0%, rgba(4, 10, 22, 0.14) 50%, transparent 100%);
+}
+.i::after {
+  content: attr(data-y);
+  position: absolute;
+  right: 14px;
+  bottom: -8px;
+  z-index: 3;
+  font: 800 76px/1 "Inter", "Avenir Next", system-ui, sans-serif;
+  color: #ffffff;
+  opacity: 0.3;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.i img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  opacity: 0;
+  transition: transform 0.45s ease, opacity 0.45s ease;
+}
+.i img.loaded {
+  opacity: 1;
+}
+article:hover .i img {
+  transform: scale(1.04);
+}
+.t {
+  padding: 16px 18px 20px;
+}
+.t b {
+  display: inline-block;
+  padding: 2px 11px;
+  border-radius: 99px;
+  border: 1px solid var(--a);
+  background: var(--g);
+  color: var(--a);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+.t h2 {
+  margin: 10px 0 6px;
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.t p {
+  margin: 0;
+  color: var(--m);
+}
+footer {
+  margin-top: 8px;
+  margin-bottom: 40px;
+  padding: 20px;
+  text-align: center;
+  color: var(--m);
+}
+footer p {
+  margin: 6px 0 0;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<!-- Mavzuni almashtirish tugmasi (Avto / Yorug' / Qorong'i) -->
+<button type="button" class="theme-btn" id="themeBtn" aria-label="Mavzuni o‘zgartirish">
+  <span id="themeIcon">🌓</span>
+  <span id="themeLabel">Avto</span>
+</button>
+
+<!-- Bosh qism (Hero) -->
+<header class="hero c">
+  <svg class="em" viewBox="0 0 100 100" aria-label="BMW emblemasi">
+    <circle cx="50" cy="50" r="47" fill="#111" stroke="#fff" stroke-opacity=".55" stroke-width="2"/>
+    <circle cx="50" cy="50" r="35" fill="#fff"/>
+    <path d="M50 50H15a35 35 0 0 1 35-35zM50 50h35a35 35 0 0 1-35 35z" fill="#1c69d4"/>
+  </svg>
+  <h1>BMW tarixi</h1>
+  <p>Noldan yuz yillikkacha va undan keyin: Myunxen samolyot dvigatellaridan elektr davrigacha, 1916-yildan bugungacha.</p>
+  <div class="ch">
+    <span>1916-yilda tashkil topgan</span>
+    <span>Bosh qarorgoh: Myunxen</span>
+    <span>110 yillik tarix</span>
+  </div>
+</header>
+
+<!-- 17 ta xronologik kartochka (faqat haqiqiy fotolar bilan) -->
+<main>
+  <!-- 1 -->
+  <article class="c">
+    <div class="i" style="--h:215" data-y="1917">
+      <img data-file="BMW_Headquarters_in_Munich_-_2016.jpg" data-query="BMW headquarters Munich building" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_Headquarters_in_Munich_-_2016.jpg?width=900" alt="Myunxendagi BMW bosh qarorgohi" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1916–17</b>
+      <h2>Tugʻilish: Myunxen osmonida</h2>
+      <p>1916-yil 7-martda Bavariya samolyot zavodlari ochildi. 1917-yilda Rapp dvigatel zavodi «Bayerische Motoren Werke», ya’ni BMW nomini oldi. Koʻk-oq choraklar Bavariya ranglaridan olingan.</p>
+    </div>
+  </article>
+
+  <!-- 2 -->
+  <article class="c">
+    <div class="i" style="--h:200" data-y="1919">
+      <img data-file="BMW_IIIa_Flugmotor.jpg" data-query="BMW IIIa aircraft engine" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_IIIa_Flugmotor.jpg?width=900" alt="BMW IIIa aviatsiya dvigateli" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1919</b>
+      <h2>Osmon rekordi</h2>
+      <p>17-iyunda uchuvchi Franz Zeno Diemer BMW IV dvigatelli samolyotda 9760 metrga koʻtarilib, jahon rekordini oʻrnatdi. Soʻng Versal shartnomasi aviadvigatel ishlab chiqarishni toʻxtatdi.</p>
+    </div>
+  </article>
+
+  <!-- 3 -->
+  <article class="c">
+    <div class="i" style="--h:185" data-y="1923">
+      <img data-file="BMW_R_32_1923.jpg" data-query="BMW R 32 1923 motorcycle" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_R_32_1923.jpg?width=900" alt="BMW R32 mototsikli (1923)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1923</b>
+      <h2>Birinchi mototsikl: R32</h2>
+      <p>Max Friz loyihalagan R32 ikki yonga yoyilgan «boxer» dvigateli bilan chiqdi. Bu sxema BMW mototsikllarining belgisiga aylandi.</p>
+    </div>
+  </article>
+
+  <!-- 4 -->
+  <article class="c">
+    <div class="i" style="--h:170" data-y="1929">
+      <img data-file="BMW_3-15_PS_Dixi_DA_1_1929.jpg" data-query="BMW 3/15 Dixi 1929" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_3-15_PS_Dixi_DA_1_1929.jpg?width=900" alt="BMW 3/15 Dixi avtomobili (1929)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1928–29</b>
+      <h2>Birinchi avtomobil</h2>
+      <p>1928-yilda Eisenach zavodi sotib olindi. Austin 7 litsenziyasi asosidagi BMW 3/15 brendning birinchi avtomobili boʻldi.</p>
+    </div>
+  </article>
+
+  <!-- 5 -->
+  <article class="c">
+    <div class="i" style="--h:225" data-y="1933">
+      <img data-file="BMW_303_Limousine_1933.jpg" data-query="BMW 303 Limousine 1933" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_303_Limousine_1933.jpg?width=900" alt="BMW 303 sedani (1933)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1933</b>
+      <h2>«Buyrak» panjarasi</h2>
+      <p>BMW 303 birinchi olti silindrli BMW edi. Unda ikki boʻlakli «buyrak» radiator panjarasi paydo boʻldi; bugun ham u brendning yuzi.</p>
+    </div>
+  </article>
+
+  <!-- 6 -->
+  <article class="c">
+    <div class="i" style="--h:250" data-y="1936">
+      <img data-file="BMW_328_Roadster_1937.jpg" data-query="BMW 328 Roadster 1937" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_328_Roadster_1937.jpg?width=900" alt="BMW 328 Roadster (1936)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1936</b>
+      <h2>Afsonaviy 328</h2>
+      <p>Yengil va aerodinamik 328 roadsteri poygalarda yuzdan ortiq gʻalaba qozondi va 1940-yilda Mille Miglia poygasida umumiy gʻolib boʻldi.</p>
+    </div>
+  </article>
+
+  <!-- 7 -->
+  <article class="c">
+    <div class="i" style="--h:25" data-y="1948">
+      <img data-file="BMW_R_24_1948.jpg" data-query="BMW R 24 1948 motorcycle" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_R_24_1948.jpg?width=900" alt="BMW R24 mototsikli (1948)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1945–48</b>
+      <h2>Xarobadan qayta tiklanish</h2>
+      <p>Urush zavodlarni vayron qildi, Eisenach esa sovet zonasida qoldi. 1948-yilda ishlab chiqarish R24 mototsikli bilan qayta boshlandi.</p>
+    </div>
+  </article>
+
+  <!-- 8 -->
+  <article class="c">
+    <div class="i" style="--h:45" data-y="1955">
+      <img data-file="BMW_Isetta_250.jpg" data-query="BMW Isetta 250" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_Isetta_250.jpg?width=900" alt="BMW Isetta 250 mikroavtomobili" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1955–59</b>
+      <h2>Isetta va inqiroz</h2>
+      <p>Italiyadan litsenziyalangan Isetta mikroavtomobili 160 mingdan ortiq sotildi. 1959-yilda BMW bankrotlik yoqasiga keldi; Quandt oilasi sarmoya kiritib, kompaniyani saqlab qoldi.</p>
+    </div>
+  </article>
+
+  <!-- 9 -->
+  <article class="c">
+    <div class="i" style="--h:205" data-y="1962">
+      <img data-file="BMW_1500_1963.jpg" data-query="BMW 1500 1963 Neue Klasse" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_1500_1963.jpg?width=900" alt="BMW 1500 Neue Klasse (1962)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1962</b>
+      <h2>Neue Klasse: yangi yoʻl</h2>
+      <p>1500 sedani zamonaviy dizayn bilan sport xarakterini birlashtirdi. Aynan shu avlod BMW’ning «sport sedan» obrazini shakllantirdi.</p>
+    </div>
+  </article>
+
+  <!-- 10 -->
+  <article class="c">
+    <div class="i" style="--h:350" data-y="1972">
+      <img data-file="BMW_2002_turbo_1974.jpg" data-query="BMW 2002 turbo 1974" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_2002_turbo_1974.jpg?width=900" alt="BMW 2002 turbo (1973)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1972–73</b>
+      <h2>Motorsport ruhi: M va turbo</h2>
+      <p>1972-yilda BMW Motorsport GmbH, ya’ni kelajakdagi M tashkil topdi, 5-seriya tanishtirildi. 1973-yilda 2002 turbo Yevropadagi birinchi seriyali turbomotorlilardan biri boʻldi.</p>
+    </div>
+  </article>
+
+  <!-- 11 -->
+  <article class="c">
+    <div class="i" style="--h:215" data-y="1975">
+      <img data-file="BMW_316_E21.jpg" data-query="BMW 316 E21" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_316_E21.jpg?width=900" alt="BMW 3-seriya E21 (1975)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1975–77</b>
+      <h2>3-, 6- va 7-seriyalar</h2>
+      <p>1975-yilgi 3-seriya BMW’ning eng ommabop yoʻnalishiga aylandi. 1976-yilda 6-seriya, 1977-yilda flagman 7-seriya chiqdi.</p>
+    </div>
+  </article>
+
+  <!-- 12 -->
+  <article class="c">
+    <div class="i" style="--h:5" data-y="1978">
+      <img data-file="BMW_M1_(1978-1981)_front-left_2015-03-04_U.jpg" data-query="BMW M1 1978" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M1_(1978-1981)_front-left_2015-03-04_U.jpg?width=900" alt="BMW M1 superkari (1978)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1978</b>
+      <h2>M1: birinchi superkar</h2>
+      <p>Oʻrta joylashgan dvigatelli M1 Giugiaro dizayni bilan yaratildi va Procar poyga seriyasiga ham asos boʻldi.</p>
+    </div>
+  </article>
+
+  <!-- 13 -->
+  <article class="c">
+    <div class="i" style="--h:235" data-y="1986">
+      <img data-file="BMW_M3_E30_front_20080723.jpg" data-query="BMW M3 E30" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_M3_E30_front_20080723.jpg?width=900" alt="BMW M3 E30 (1986)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1986</b>
+      <h2>M3: turizm qiroli</h2>
+      <p>Birinchi M3 (E30) poygadagi homologatsiya uchun yaratildi va turizm poygalarida koʻplab gʻalabalar keltirdi.</p>
+    </div>
+  </article>
+
+  <!-- 14 -->
+  <article class="c">
+    <div class="i" style="--h:160" data-y="1994">
+      <img data-file="BMW_X5_(E53)_front_20080814.jpg" data-query="BMW X5 E53" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_X5_(E53)_front_20080814.jpg?width=900" alt="BMW X5 E53 SUV (1999)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>1994–2003</b>
+      <h2>Kengayish: yangi brendlar va X5</h2>
+      <p>1994-yilda Rover Group sotib olindi (2000-yilda sotildi, MINI qoldi). 1999-yilda X5 premium SUV bozoriga yoʻl ochdi, 2001-yilda yangi MINI, 2003-yilda Rolls-Royce Phantom chiqdi.</p>
+    </div>
+  </article>
+
+  <!-- 15 -->
+  <article class="c">
+    <div class="i" style="--h:190" data-y="2013">
+      <img data-file="BMW_i8_IAA_2013_01.jpg" data-query="BMW i8 IAA 2013" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_i8_IAA_2013_01.jpg?width=900" alt="BMW i8 plagin-gibrid superkari" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>2013–14</b>
+      <h2>Elektr davri: i3 va i8</h2>
+      <p>2013-yilda uglerod tolali kuzovli i3 elektromobili, 2014-yilda plagin-gibrid i8 superkari chiqdi.</p>
+    </div>
+  </article>
+
+  <!-- 16 -->
+  <article class="c">
+    <div class="i" style="--h:265" data-y="2016">
+      <img data-file="BMW_Vision_Next_100_IAA_2017.jpg" data-query="BMW Vision Next 100" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_Vision_Next_100_IAA_2017.jpg?width=900" alt="BMW Vision Next 100 konsepti (2016)" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>2016</b>
+      <h2>100 yosh: Vision Next 100</h2>
+      <p>BMW 100 yoshga toʻldi va kelajak konsepti Vision Next 100 ni koʻrsatdi: avtonom, elektr va ulangan mobillik.</p>
+    </div>
+  </article>
+
+  <!-- 17 -->
+  <article class="c">
+    <div class="i" style="--h:205" data-y="2026">
+      <img data-file="BMW_Vision_Neue_Klasse_IAA_2023_1X7A0435.jpg" data-query="BMW Vision Neue Klasse" src="https://commons.wikimedia.org/wiki/Special:FilePath/BMW_Vision_Neue_Klasse_IAA_2023_1X7A0435.jpg?width=900" alt="BMW Vision Neue Klasse konsepti" referrerpolicy="no-referrer" loading="eager">
+    </div>
+    <div class="t">
+      <b>2021–26</b>
+      <h2>Yangi avlod: Neue Klasse</h2>
+      <p>iX, i4 va i7 bilan elektr qatori kengaydi. 2025-yildan yangi Neue Klasse platformasi (birinchi model iX3) BMW’ning keyingi bobini ochmoqda.</p>
+    </div>
+  </article>
+</main>
+
+<!-- Pastki qism (Footer) -->
+<footer class="c">
+  <div>2016-yilda 100 yoshga, 2026-yilda 110 yoshga toʻldi. Hikoya davom etmoqda.</div>
+  <p>Mustaqil ta’lim sahifasi. BMW — BMW AG ning savdo belgisi; tarixiy suratlar Wikimedia Commons manbalaridan foydalanilgan.</p>
+</footer>
+
+<script>
+// 1. Mavzu (Avto -> Yorug' -> Qorong'i) boshqaruvi
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById('themeBtn');
+  var icon = document.getElementById('themeIcon');
+  var label = document.getElementById('themeLabel');
+  var modes = [
+    { key: 'auto', icon: '🌓', text: 'Avto' },
+    { key: 'light', icon: '☀️', text: 'Yorug‘' },
+    { key: 'dark', icon: '🌙', text: 'Qorong‘i' }
+  ];
+  var idx = 0;
+
+  try {
+    var saved = localStorage.getItem('bmw-theme');
+    if (saved === 'light') idx = 1;
+    else if (saved === 'dark') idx = 2;
+  } catch (e) {}
+
+  function applyTheme(i) {
+    var m = modes[i];
+    if (m.key === 'auto') root.removeAttribute('data-theme');
+    else root.setAttribute('data-theme', m.key);
+    icon.textContent = m.icon;
+    label.textContent = m.text;
+    try {
+      localStorage.setItem('bmw-theme', m.key);
+    } catch (e) {}
+  }
+
+  applyTheme(idx);
+
+  btn.addEventListener('click', function () {
+    idx = (idx + 1) % modes.length;
+    applyTheme(idx);
+  });
+})();
+
+// 2. Wikimedia Commons API orqali haqiqiy CDN suratlarni aniqlash va yuklash
+(function () {
+  var imgs = document.querySelectorAll('.i img[data-file]');
+  var titles = [];
+
+  imgs.forEach(function (img) {
+    if (img.complete && img.naturalWidth > 0) {
+      img.classList.add('loaded');
+    }
+    img.addEventListener('load', function () {
+      img.classList.add('loaded');
+    });
+    img.addEventListener('error', function () {
+      fallbackSearch(img);
+    });
+    titles.push('File:' + img.getAttribute('data-file'));
+  });
+
+  function fallbackSearch(img) {
+    if (img.dataset.searched) return;
+    img.dataset.searched = '1';
+    var q = img.getAttribute('data-query') || 'BMW car';
+    var searchUrl = 'https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=' +
+      encodeURIComponent('filetype:bitmap ' + q) +
+      '&gsrnamespace=6&gsrlimit=1&prop=imageinfo&iiprop=url&iiurlwidth=900&format=json&origin=*';
+
+    fetch(searchUrl)
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (!data.query || !data.query.pages) return;
+        var pages = Object.values(data.query.pages);
+        if (pages[0] && pages[0].imageinfo && pages[0].imageinfo[0]) {
+          var info = pages[0].imageinfo[0];
+          img.src = info.thumburl || info.url;
+        }
+      })
+      .catch(function () {});
+  }
+
+  // Barcha fayllar uchun to'g'ridan-to'g'ri CDN manzilini olish
+  var apiUrl = 'https://commons.wikimedia.org/w/api.php?action=query&titles=' +
+    encodeURIComponent(titles.join('|')) +
+    '&prop=imageinfo&iiprop=url&iiurlwidth=900&format=json&origin=*';
+
+  fetch(apiUrl)
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (!data.query || !data.query.pages) return;
+      var normMap = {};
+      if (data.query.normalized) {
+        data.query.normalized.forEach(function (n) {
+          normMap[n.to] = n.from;
+        });
+      }
+      var urlMap = {};
+      Object.values(data.query.pages).forEach(function (p) {
+        var origTitle = normMap[p.title] || p.title;
+        if (p.imageinfo && p.imageinfo[0]) {
+          urlMap[origTitle] = p.imageinfo[0].thumburl || p.imageinfo[0].url;
+        }
+      });
+
+      imgs.forEach(function (img) {
+        var key = 'File:' + img.getAttribute('data-file');
+        if (urlMap[key]) {
+          if (img.src !== urlMap[key]) {
+            img.src = urlMap[key];
+          }
+        } else if (!img.complete || img.naturalWidth === 0) {
+          fallbackSearch(img);
+        }
+      });
+    })
+    .catch(function () {});
+})();
+</script>
+</body>
+</html>
